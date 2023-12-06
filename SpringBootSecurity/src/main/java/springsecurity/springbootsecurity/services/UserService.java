@@ -1,0 +1,20 @@
+package springsecurity.springbootsecurity.services;
+
+import springsecurity.springbootsecurity.model.User;
+import java.util.List;
+
+public interface UserService  {
+
+    List<springsecurity.springbootsecurity.model.User> getAllUsers();
+
+    User getUserById (Long id);
+
+    void addUser(User user);
+
+    void updateUser(User user, Long id);
+
+    void removeUser(Long id);
+
+    User findByUsername(String username);
+
+}
